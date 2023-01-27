@@ -52,7 +52,21 @@ new_dict = {
 print("\nNew Dictionary:",new_dict,"\nUpdate Student Information")
 
 name = input("Enter Full Name: ")
-if isinstance(name, str) == False: 
-    print("Invalid Input")
+new_dict['name'] = name
+age = int(input("Enter Age: "))
+if age < 16:
+    print("You are under aged")
+elif age > 20:
+    print("You are over aged")
+else:
+    new_dict['age'] = age
+
+cgpa = float(input("Enter your CGPS: "))
+if cgpa < 2.75 :
+    print("CGPA must be above 2.75")
+else :
+    new_dict['cgpa'] = cgpa
+
+print(new_dict)
 
 print("\n")
