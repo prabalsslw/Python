@@ -1,0 +1,23 @@
+To create a project
+1. Environment create
+	python -m venv env
+or  py -m venv env
+2. Active environment
+	env\scripts\activate
+3. Install django
+	pip install django
+4. Create Project
+	django-admin startproject crudProject
+5. Go to project folder
+	cd projectfolder
+6. Create APP
+	python manage.py startapp crudApp
+7. Run Project/Server Run
+	python manage.py runserver
+8. App should be enlisted in the seetings.py
+9. Templates should be enlisted in the seetings.py
+10. static should be enlisted in the seetings.py in the below of statc url
+	STATIC_ROOT = '/static'
+	STATICFILES_DIRS = [
+    	os.path.join(BASE_DIR, 'static')
+	]
