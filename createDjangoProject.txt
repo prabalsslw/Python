@@ -21,3 +21,23 @@ or  py -m venv env
 	STATICFILES_DIRS = [
     	os.path.join(BASE_DIR, 'static')
 	]
+##########################################
+When admin page not loading
+1. python manage.py makemigrations
+2. python manage.py migrate
+
+Create Username password
+3. python manage.py createsuperuser
+
+Install Jazzmin admin portal
+4. pip install -U django-jazzmin
+add jazzmin to settings.py app section
+
+Add new urls.py in App and add this urls to project urls
+
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('crudApp.urls')),
+]
