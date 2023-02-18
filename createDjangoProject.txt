@@ -44,3 +44,27 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('crudApp.urls')),
 ]
+
+18-02-2023
+1. Create database table column
+2. UI data input field create
+3. User data save to database table 
+4. Show all data in the frontend.
+5. View specific data in a page.
+6. Update data 
+7. Delete data
+8. Search data
+
+pip install pillow
+
+If we use media file
+
+in the project urls.py 
+
+from django.conf import settings
+from django.conf.urls.static import static
++ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+inthe seetings.py
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
