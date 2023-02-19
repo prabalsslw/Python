@@ -38,7 +38,7 @@ add jazzmin to settings.py app section
 
 Add new urls.py in App and add this urls to project urls
 
-from django.urls import path, include
+- from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -55,7 +55,7 @@ urlpatterns = [
 7. Delete data
 8. Search data
 
-pip install pillow
+- pip install pillow
 
 If we use media file
 
