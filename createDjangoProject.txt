@@ -68,3 +68,18 @@ from django.conf.urls.static import static
 inthe seetings.py
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+
+24-02-2023
+For file input in the form 
+- enctype="multipart/form-data"
+Only for image 
+- request.POST.get('img')
+- import model in the view
+- a = Profile.objecte.create(name=name)
+a.save()
+
+To show the name
+def __str__(self):
+	return str(self.name)
+in the admin.py register models to show in the django admin portal
+- admin.site.register(Profile)
