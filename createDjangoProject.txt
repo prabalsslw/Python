@@ -83,3 +83,10 @@ def __str__(self):
 	return str(self.name)
 in the admin.py register models to show in the django admin portal
 - admin.site.register(Profile)
+
+
+03-03-2023
+To search multiple column use 'Q'
+- from django.db.models import Q
+- queryset = User.objects.filter(
+    Q(first_name__startswith='R') | Q(last_name__startswith='D')
