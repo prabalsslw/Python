@@ -90,3 +90,9 @@ To search multiple column use 'Q'
 - from django.db.models import Q
 - queryset = User.objects.filter(
     Q(first_name__startswith='R') | Q(last_name__startswith='D')
+    
+    
+04-03-2023
+if we handover the project to another developer. We have to create requirements to get the packages.
+- pip freeze
+pip freezr > requirements.txt
