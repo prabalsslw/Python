@@ -95,4 +95,5 @@ To search multiple column use 'Q'
 04-03-2023
 if we handover the project to another developer. We have to create requirements to get the packages.
 - pip freeze
-pip freezr > requirements.txt
+- pip freezr > requirements.txt
+- pip install requirements.txt
