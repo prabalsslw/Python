@@ -96,4 +96,4 @@ To search multiple column use 'Q'
 if we handover the project to another developer. We have to create requirements to get the packages.
 - pip freeze
 - pip freezr > requirements.txt
-- pip install requirements.txt
+- pip install -r requirements.txt
