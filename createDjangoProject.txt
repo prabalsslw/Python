@@ -97,3 +97,8 @@ if we handover the project to another developer. We have to create requirements 
 - pip freeze
 - pip freezr > requirements.txt
 - pip install -r requirements.txt
+
+
+18-03-2023
+Create Project
+django-admin startproject crudProject .
