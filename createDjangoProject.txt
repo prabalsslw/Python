@@ -101,4 +101,7 @@ if we handover the project to another developer. We have to create requirements 
 
 18-03-2023
 Create Project to keep manage.py outside of project
-django-admin startproject crudProject .
+- django-admin startproject crudProject .
+
+Load static in every file
+- {% load static %}
