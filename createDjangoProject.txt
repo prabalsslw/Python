@@ -105,3 +105,4 @@ Create Project to keep manage.py outside of project
 
 Load static in every file
 - {% load static %}
+- {% static 'js cdn' %}
