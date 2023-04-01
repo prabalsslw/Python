@@ -106,3 +106,12 @@ Create Project to keep manage.py outside of project
 Load static in every file
 - {% load static %}
 - {% static 'js cdn' %}
+
+
+31-0302023
+
+-from django.contrib.auth import update_session_auth_hash
+
+user.set_password(password)
+update_session_auth_hash(request, user)
+user.save()
